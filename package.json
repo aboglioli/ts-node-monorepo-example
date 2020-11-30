@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "license": "MIT",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "messenger:build": "yarn workspace @app/messenger build",
+    "api:build": "yarn workspace @app/api build",
+    "build": "yarn messenger:build; yarn api:build",
+    "api:start": "node packages/dist/api/src/index"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.2"
+  }
+}

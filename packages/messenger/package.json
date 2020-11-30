@@ -1,0 +1,9 @@
+{
+  "name": "@app/messenger",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index",
+  "scripts": {
+    "build": "tsc"
+  }
+}
